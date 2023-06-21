@@ -28,6 +28,9 @@ p {
 .teks {
     color: blue;
 }
+.bawah {
+    font-size: larger;
+}
 h3 {
     margin-left: 5%;
     font-size: larger;
