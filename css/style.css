@@ -9,7 +9,7 @@ header {
     color: aliceblue;
     padding: 8px;
 }
-#InputField {
+#InputField1 , #InputField2, #InputField3 {
     background-color: azure;
     padding: 8px;
     width: 90%;
@@ -39,7 +39,7 @@ hr {
     margin-left: 5%;
     margin-right: 3%;
 }
-label {
+#label1 , #label2 ,#label3 {
     font-size: larger;
     margin-left: 5%;
 }

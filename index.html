@@ -4,7 +4,6 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='css/style.css'>
-    <script src='main.js'></script>
     <title>Temperature Convertion</title>
 </head>
 <body>
@@ -13,28 +12,29 @@
     </header>
     <br>
     <p>Masukkan suhu derajat Celsius(&#8451;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(&#8457;).</p>
-    <label>Celsius(&#8451;):</label>
+    <label id="label1">Celsius :</label>
     <br>
-    <input id="InputField" type="number">
+    <input id="InputField1" type="number">
     <br>
     <div class="button">
-    <button>Konversi</button>
-    <button>Reset</button>
-    <button>Reverse</button>
+    <button onclick="konversi()">Konversi</button>
+    <button onclick="resett()">Reset</button>
+    <button id="button3" onclick="balik()">Reverse</button>
     </div>
-    <label>Fahrenheit(&#8457;):</label>
-    <input id="InputField" type="number">
+    <label id="label2">Fahrenheit :</label>
+    <input id="InputField2" type="number" disabled>
     <br>
     <br>
     <br>
-    <label>Cara Kalkulasi:</label>
-    <input id="InputField" type="text">
-    <p class="teks">Fahrenheit ke Celsius</p>
+    <label id="label3">Cara Kalkulasi :</label>
+    <textarea id="InputField3" disabled></textarea> 
+    <p class="teks" id="fahtocel">Fahrenheit ke Celsius</p>
     <h3>Cara Konversi Dari Celsius(&#8451;) ke Fahrenheit(&#8457;)</h3>
     <hr>
     <p>Suhu <i>S</i> dalam derajat Fahrenheit(&#8457) sama dengan suhu <i>S</i> dalam derajat Celsius(&#8451;) kali 9/5 tambah 32.</p>
     <p class="bawah"><i>S</i><sub>(&#8457)</sub> = (<i>S</i><sub>(&#8451;)</sub> &#215; 9/5) &#43; 32</p>
     <p>atau</p>
     <p class="bawah"><i>S</i><sub>(&#8457)</sub> = (<i>S</i><sub>(&#8451;)</sub> &#215; 1.8) &#43; 32</p>
+    <script src="JS/script.js"></script>
 </body>
 </html> 
